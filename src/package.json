@@ -1,0 +1,11 @@
+{
+  "name": "alexa-skill-fernseher",
+  "version": "1.0.0",
+  "description": "Sample alexa skill",
+  "main": "index.js",
+  "author": "Timo Korinth",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "1.0.6"
+  }
+}

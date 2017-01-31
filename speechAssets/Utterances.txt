@@ -1,0 +1,24 @@
+StartIntent er soll starten
+StartIntent starten
+StartIntent einschalten
+StartIntent er soll sich einschalten
+StartIntent er soll sich anmachen
+ChangeChannelIntent er soll auf {Channel} schalten
+ChangeChannelIntent er soll auf {Channel} umschalten
+ChangeChannelIntent er soll {Channel} einschalten
+ChangeChannelIntent er soll {Channel} anmachen
+ChangeChannelIntent {Channel} umschalten
+ChangeChannelIntent {Channel} schalten
+ChangeChannelIntent {Channel} starten
+ChangeChannelIntent auf {Channel} umschalten
+ChangeChannelIntent auf {Channel} schalten
+ChangeChannelIntent schalte auf {Channel}
+ChangeChannelIntent schalte {Channel}
+VolUpIntent er soll lauter machen
+VolUpIntent lauter
+VolUpIntent etwas lauter machen
+VolUpIntent etwas lauter
+VolDownIntent er soll leiser machen
+VolDownIntent leiser
+VolDownIntent etwas leiser machen
+VolDownIntent etwas leiser

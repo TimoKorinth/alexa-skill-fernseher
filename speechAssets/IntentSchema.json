@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "StartIntent"
+    },
+    {
+      "intent": "VolUpIntent"
+    },
+    {
+      "intent": "VolDownIntent"
+    },
+    {
+      "intent": "ChangeChannelIntent",
+      "slots": [
+      {
+        "name" : "Channel",
+        "type": "LIST_OF_CHANNELS"
+      }
+     ]
+    }
+  ]
+}
