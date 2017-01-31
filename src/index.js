@@ -28,36 +28,34 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 
-var pushMessage = function(payload, tell) {
-    var params = {
-        topic: topic,
-        payload: payload,
-        qos:0
-    };
-    var self = this;
-    iotData.publish(params, function(err, data) {
-        if (!err){
-            self.emit(':tell', tell);
-        }   
-    });
-};
-
 var handlers = {
+    'PushMessage': function (payload, tell) {
+        var params = {
+            topic: topic,
+            payload: payload,
+            qos:0
+        };
+        iotData.publish(params, (err, data) => {
+            if (!err){
+                this.emit(':tell', tell);
+            }   
+        });
+    },
     'LaunchRequest': function () {
         this.emit('StartIntent');
     },
     'StartIntent': function () {
-        pushMessage('start', 'wird gestartet');
+        this.emit('PushMessage', 'start', 'wird gestartet');
     },
     'ChangeChannelIntent': function () {
         var channel = this.event.request.intent.slots.Channel.value;
-        pushMessage(channel, 'ok');
+        this.emit('PushMessage', channel, 'ok');
     },
     'VolUpIntent': function () {
-        pushMessage('volup', 'ok');
+        this.emit('PushMessage', 'volup', 'ok');
     },
     'VolDownIntent': function () {
-        pushMessage('voldown', 'ok');
+        this.emit('PushMessage', 'voldown', 'ok');
     },
     "Unhandled": function () {
         this.emit(':tell', 'keine ahnung');
