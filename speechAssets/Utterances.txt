@@ -3,6 +3,13 @@ StartIntent starten
 StartIntent einschalten
 StartIntent er soll sich einschalten
 StartIntent er soll sich anmachen
+StopIntent er soll ausgehen
+StopIntent aus
+StopIntent er soll sich ausschalten
+StopIntent er soll abschalten
+StopIntent abschalten
+StopIntent ausmachen
+StopIntent er soll sich ausmachen
 ChangeChannelIntent er soll auf {Channel} schalten
 ChangeChannelIntent er soll auf {Channel} umschalten
 ChangeChannelIntent er soll {Channel} einschalten

@@ -4,6 +4,9 @@
       "intent": "StartIntent"
     },
     {
+      "intent": "StopIntent"
+    },
+    {
       "intent": "VolUpIntent"
     },
     {

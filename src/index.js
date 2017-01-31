@@ -47,6 +47,9 @@ var handlers = {
     'StartIntent': function () {
         this.emit('PushMessage', 'start', 'wird gestartet');
     },
+    'StopIntent': function () {
+        this.emit('PushMessage', 'stop', 'wird heruntergefahren');
+    },
     'ChangeChannelIntent': function () {
         var channel = this.event.request.intent.slots.Channel.value;
         this.emit('PushMessage', channel, 'ok');
